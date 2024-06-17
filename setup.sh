@@ -7,3 +7,10 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt install nano bc bison ca-c
 
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+
+## init bin
+mkdir ~/bin
+PATH=~/bin:$PATH
+cd ~/bin
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo;
